@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
+  <title><![CDATA[Coding Life]]></title>
   <link href="http://zhanjinwu.cn/atom.xml" rel="self"/>
   <link href="http://zhanjinwu.cn/"/>
-  <updated>2014-01-17T23:59:54+08:00</updated>
+  <updated>2014-01-18T00:15:58+08:00</updated>
   <id>http://zhanjinwu.cn/</id>
   <author>
     <name><![CDATA[Jinwu Zhan]]></name>
@@ -18,13 +18,7 @@
     <link href="http://zhanjinwu.cn/blog/2014/01/17/git-merge-shou-ce-ye/"/>
     <updated>2014-01-17T23:57:26+08:00</updated>
     <id>http://zhanjinwu.cn/blog/2014/01/17/git-merge-shou-ce-ye</id>
-    <content type="html"><![CDATA[<hr />
-
-<h1>git-merge 手册页</h1>
-
-<hr />
-
-<h4>名字</h4>
+    <content type="html"><![CDATA[<h4>名字</h4>
 
 <p><code>git-merge</code> &ndash; 合并两个或多个提交历史</p>
 
