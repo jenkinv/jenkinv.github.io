@@ -1,12 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>http://zhanjinwu.cn/blog/2014/01/17/my-first-blog/</loc>
-        <lastmod>2014-01-17T23:55:22+08:00</lastmod>
-    </url>
-    <url>
         <loc>http://zhanjinwu.cn/blog/2014/01/17/git-merge-shou-ce-ye/</loc>
-        <lastmod>2014-01-18T00:10:59+08:00</lastmod>
+        <lastmod>2014-01-18T00:40:02+08:00</lastmod>
     </url>
     <url>
         <loc>http://zhanjinwu.cn/robots.txt</loc>
@@ -14,10 +10,10 @@
     </url>
     <url>
         <loc>http://zhanjinwu.cn/</loc>
-        <lastmod>2014-01-18T00:10:59+08:00</lastmod>
+        <lastmod>2014-01-18T00:40:02+08:00</lastmod>
     </url>
     <url>
         <loc>http://zhanjinwu.cn/blog/archives/</loc>
-        <lastmod>2014-01-18T00:10:59+08:00</lastmod>
+        <lastmod>2014-01-18T00:40:02+08:00</lastmod>
     </url>
 </urlset>

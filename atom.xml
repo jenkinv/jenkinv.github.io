@@ -4,7 +4,7 @@
   <title><![CDATA[Coding Life]]></title>
   <link href="http://zhanjinwu.cn/atom.xml" rel="self"/>
   <link href="http://zhanjinwu.cn/"/>
-  <updated>2014-01-18T00:15:58+08:00</updated>
+  <updated>2014-01-18T00:46:24+08:00</updated>
   <id>http://zhanjinwu.cn/</id>
   <author>
     <name><![CDATA[Jinwu Zhan]]></name>
@@ -37,6 +37,9 @@
 <h4>描述</h4>
 
 <p>把指定提交的改动记录（指上次从当前分支分离后发生的所有改动）并入当前分支。这个命令被<code>git pull</code>用来合并另外一个版本库的改动，也可以被用来手工合并一个分支的改动到另外一个分支。</p>
+
+<!-- more -->
+
 
 <p>假设存在以下历史提交记录并且当前所在分支是<code>master</code></p>
 
@@ -361,15 +364,6 @@
 <p><code>git</code>指令的一部分。</p>
 
 <blockquote><p>Written with <a href="http://benweet.github.io/stackedit/">StackEdit</a>.</p></blockquote>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[My First Blog]]></title>
-    <link href="http://zhanjinwu.cn/blog/2014/01/17/my-first-blog/"/>
-    <updated>2014-01-17T23:54:25+08:00</updated>
-    <id>http://zhanjinwu.cn/blog/2014/01/17/my-first-blog</id>
-    <content type="html"><![CDATA[<p><a href="http://zhanjinwu.cn">http://zhanjinwu.cn</a></p>
 ]]></content>
   </entry>
   
