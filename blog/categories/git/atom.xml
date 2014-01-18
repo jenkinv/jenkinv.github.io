@@ -1,115 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
 
-<!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <title>Git-merge 手册页 - Coding Life</title>
-  <meta name="author" content="Jinwu Zhan">
-
-  
-  <meta name="description" content="名字 git-merge &ndash; 合并两个或多个提交历史 语法 1
-2
-3
-4
-git merge [-n][--stat][--no-commit][--squash][--[no-]edit] [-s &lt;strategy&gt;][-X &lt;strategy-option& &hellip;">
-  
-
-  <!-- http://t.co/dKP3o1e -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  
-  <link rel="canonical" href="http://www.zhanjinwu.cn/blog/2014/01/17/git-merge-shou-ce-ye">
-  <link href="/favicon.png" rel="icon">
-  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="Coding Life" type="application/atom+xml">
-  <script src="/javascripts/modernizr-2.0.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
-  <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-
-  
-
-</head>
-
-<body   >
-  <header role="banner"><hgroup>
-  <h1><a href="/">Coding Life</a></h1>
-  
-    <h2>Stay hungry, Stay foolish!</h2>
-  
-</hgroup>
-
-</header>
-  <nav role="navigation"><ul class="subscription" data-subscription="rss">
-  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
-  
-</ul>
-  
-<form action="http://google.com/search" method="get">
-  <fieldset role="search">
-    <input type="hidden" name="q" value="site:www.zhanjinwu.cn" />
-    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
-  </fieldset>
-</form>
-  
-<ul class="main-navigation">
-  <li><a href="/">Blog</a></li>
-  <li><a href="/blog/archives">Archives</a></li>
-</ul>
-
-</nav>
-  <div id="main">
-    <div id="content">
-      <div>
-<article class="hentry" role="article">
-  
-  <header>
+  <title><![CDATA[Category: Git | Coding Life]]></title>
+  <link href="http://www.zhanjinwu.cn/blog/categories/git/atom.xml" rel="self"/>
+  <link href="http://www.zhanjinwu.cn/"/>
+  <updated>2014-01-19T02:04:20+08:00</updated>
+  <id>http://www.zhanjinwu.cn/</id>
+  <author>
+    <name><![CDATA[Jinwu Zhan]]></name>
     
-      <h1 class="entry-title">Git-merge 手册页</h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
 
   
-
-
-<time datetime="2014-01-17T23:57:26+08:00" pubdate data-updated="true">2014/01/17</time>
-        
-      </p>
-    
-  </header>
-
-
-<div class="entry-content"><h4>名字</h4>
+  <entry>
+    <title type="html"><![CDATA[Git-merge 手册页]]></title>
+    <link href="http://www.zhanjinwu.cn/blog/2014/01/17/git-merge-shou-ce-ye/"/>
+    <updated>2014-01-17T23:57:26+08:00</updated>
+    <id>http://www.zhanjinwu.cn/blog/2014/01/17/git-merge-shou-ce-ye</id>
+    <content type="html"><![CDATA[<h4>名字</h4>
 
 <p><code>git-merge</code> &ndash; 合并两个或多个提交历史</p>
 
 <h4>语法</h4>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>git merge [-n][--stat][--no-commit][--squash][--[no-]edit]
-</span><span class='line'>      [-s &lt;strategy&gt;][-X &lt;strategy-option&gt;]
-</span><span class='line'>git merge &lt;msg&gt; HEAD &lt;commit&gt; ...
-</span><span class='line'>git merge --abort</span></code></pre></td></tr></table></div></figure>
+<p>```</p>
 
+<pre><code>git merge [-n][--stat][--no-commit][--squash][--[no-]edit]
+        [-s &lt;strategy&gt;][-X &lt;strategy-option&gt;]
+git merge &lt;msg&gt; HEAD &lt;commit&gt; ...
+git merge --abort
+</code></pre>
+
+<p>```</p>
 
 <h4>描述</h4>
 
@@ -120,23 +43,25 @@ git merge [-n][--stat][--no-commit][--squash][--[no-]edit] [-s &lt;strategy&gt;]
 
 <p>假设存在以下历史提交记录并且当前所在分支是<code>master</code></p>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>   A---B---C topic
-</span><span class='line'>   /
-</span><span class='line'>D---E---F---G master</span></code></pre></td></tr></table></div></figure>
+<p>```</p>
 
+<pre><code>      A---B---C topic
+     /
+D---E---F---G master
+</code></pre>
+
+<p>```</p>
 
 <p>执行<code>git merge topic</code>将把<code>topic</code>分支自从<code>master</code>分离（例如：<code>E</code>）直到当前最新提交（例如：<code>C</code>）的所有改动重放到<code>master</code>，然后生成新的提交并记录它的两个父提交的名字和用户描述的日志信息。</p>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>   A---B---C topic
-</span><span class='line'>   /         \
-</span><span class='line'>D---E---F---G---H master</span></code></pre></td></tr></table></div></figure>
+<p>```</p>
 
+<pre><code>      A---B---C topic
+     /         \
+D---E---F---G---H master
+</code></pre>
+
+<p>```</p>
 
 <pre><code>第二种语法（`&lt;msg&gt; HEAD &lt;commit&gt; ...`）因为历史原因而存在。不要在命令行或者新的脚本代码中使用它。它等价于`git merge -m &lt;msg&gt; &lt;commit&gt; ....`
 </code></pre>
@@ -251,61 +176,41 @@ git merge [-n][--stat][--no-commit][--squash][--[no-]edit] [-s &lt;strategy&gt;]
 
 <p>在合并过程中，工作区文件会被更新以用来反映合并结果。在相对于共同祖先的改动之中，非重叠部分（比如，你修改了文件的一部分，而另一边未修改这部分，诸如此类）会被逐字地组合在一起。然而当两边修改了同一部分，git不能随机选择其中一边而放弃另一边，它会给你留下两边的改动让你来解决。</p>
 
-<p>默认情况下，git会使用和RCS套件中的&#8217;merge&#8217;(译者注：RCS是另一款版本管理工具，<a href="http://www.idi.ntnu.no/~systprog/rcs/">http://www.idi.ntnu.no/~systprog/rcs/</a>) 程序相同的风格来呈现冲突内容，像这样：</p>
+<p>默认情况下，git会使用和RCS套件中的'merge'(译者注：RCS是另一款版本管理工具，<a href="http://www.idi.ntnu.no/~systprog/rcs/">http://www.idi.ntnu.no/~systprog/rcs/</a>) 程序相同的风格来呈现冲突内容，像这样：
+```c
+Here are lines that are either unchanged from the common
+ancestor, or cleanly resolved because only one side changed.
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; yours:sample.txt
+Conflict resolution is hard;</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-</pre></td><td class='code'><pre><code class='c'><span class='line'><span class="n">Here</span> <span class="n">are</span> <span class="n">lines</span> <span class="n">that</span> <span class="n">are</span> <span class="n">either</span> <span class="n">unchanged</span> <span class="n">from</span> <span class="n">the</span> <span class="n">common</span>
-</span><span class='line'><span class="n">ancestor</span><span class="p">,</span> <span class="n">or</span> <span class="n">cleanly</span> <span class="n">resolved</span> <span class="n">because</span> <span class="n">only</span> <span class="n">one</span> <span class="n">side</span> <span class="n">changed</span><span class="p">.</span>
-</span><span class='line'><span class="o">&lt;&lt;&lt;&lt;&lt;&lt;&lt;</span> <span class="n">yours</span><span class="o">:</span><span class="n">sample</span><span class="p">.</span><span class="n">txt</span>
-</span><span class='line'><span class="n">Conflict</span> <span class="n">resolution</span> <span class="n">is</span> <span class="n">hard</span><span class="p">;</span>
-</span><span class='line'><span class="n">let</span><span class="err">&#39;</span><span class="n">s</span> <span class="n">go</span> <span class="n">shopping</span><span class="p">.</span>
-</span><span class='line'><span class="o">=======</span>
-</span><span class='line'><span class="n">Git</span> <span class="n">makes</span> <span class="n">conflict</span> <span class="n">resolution</span> <span class="n">easy</span><span class="p">.</span>
-</span><span class='line'><span class="o">&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span> <span class="n">theirs</span><span class="o">:</span><span class="n">sample</span><span class="p">.</span><span class="n">txt</span>
-</span><span class='line'><span class="n">And</span> <span class="n">here</span> <span class="n">is</span> <span class="n">another</span> <span class="n">line</span> <span class="n">that</span> <span class="n">is</span> <span class="n">cleanly</span> <span class="n">resolved</span> <span class="n">or</span> <span class="n">unmodified</span><span class="p">.</span>
-</span></code></pre></td></tr></table></div></figure>
+<h1>let&rsquo;s go shopping.</h1>
 
+<p>Git makes conflict resolution easy.</p>
 
-<p>冲突区域被<code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code>,<code>=======</code>和<code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code>标记出来。<code>=======</code>之前的部分是你的修改，之后的部分是其它人的修改。</p>
+<blockquote><blockquote><blockquote><blockquote><blockquote><blockquote><blockquote><p>theirs:sample.txt
+And here is another line that is cleanly resolved or unmodified.
+<code>``
+冲突区域被</code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;<code>,</code>=======<code>和</code>>>>>>>><code>标记出来。</code>=======`之前的部分是你的修改，之后的部分是其它人的修改。</p></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote>
 
 <p>默认的格式没有显示出原始文件中冲突区域的内容。你不能判断出有多少行被其它人删除/替换。你仅仅知道你这边改成了什么，其它人那边改成了什么。</p>
 
-<p>可以选择在配置中设置<code>merge.conflictstyle</code>变量的值为<code>diff3</code>，这样上面的冲突会变成这样：</p>
+<p>可以选择在配置中设置<code>merge.conflictstyle</code>变量的值为<code>diff3</code>，这样上面的冲突会变成这样：
+```c
+Here are lines that are either unchanged from the common
+ancestor, or cleanly resolved because only one side changed.
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; yours:sample.txt
+Conflict resolution is hard;
+let&rsquo;s go shopping.
+|||||||</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-</pre></td><td class='code'><pre><code class='c'><span class='line'><span class="n">Here</span> <span class="n">are</span> <span class="n">lines</span> <span class="n">that</span> <span class="n">are</span> <span class="n">either</span> <span class="n">unchanged</span> <span class="n">from</span> <span class="n">the</span> <span class="n">common</span>
-</span><span class='line'><span class="n">ancestor</span><span class="p">,</span> <span class="n">or</span> <span class="n">cleanly</span> <span class="n">resolved</span> <span class="n">because</span> <span class="n">only</span> <span class="n">one</span> <span class="n">side</span> <span class="n">changed</span><span class="p">.</span>
-</span><span class='line'><span class="o">&lt;&lt;&lt;&lt;&lt;&lt;&lt;</span> <span class="n">yours</span><span class="o">:</span><span class="n">sample</span><span class="p">.</span><span class="n">txt</span>
-</span><span class='line'><span class="n">Conflict</span> <span class="n">resolution</span> <span class="n">is</span> <span class="n">hard</span><span class="p">;</span>
-</span><span class='line'><span class="n">let</span><span class="err">&#39;</span><span class="n">s</span> <span class="n">go</span> <span class="n">shopping</span><span class="p">.</span>
-</span><span class='line'><span class="o">|||||||</span>
-</span><span class='line'><span class="n">Conflict</span> <span class="n">resolution</span> <span class="n">is</span> <span class="n">hard</span><span class="p">.</span>
-</span><span class='line'><span class="o">=======</span>
-</span><span class='line'><span class="n">Git</span> <span class="n">makes</span> <span class="n">conflict</span> <span class="n">resolution</span> <span class="n">easy</span><span class="p">.</span>
-</span><span class='line'><span class="o">&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span> <span class="n">theirs</span><span class="o">:</span><span class="n">sample</span><span class="p">.</span><span class="n">txt</span>
-</span><span class='line'><span class="n">And</span> <span class="n">here</span> <span class="n">is</span> <span class="n">another</span> <span class="n">line</span> <span class="n">that</span> <span class="n">is</span> <span class="n">cleanly</span> <span class="n">resolved</span> <span class="n">or</span> <span class="n">unmodified</span><span class="p">.</span>
-</span></code></pre></td></tr></table></div></figure>
+<h1>Conflict resolution is hard.</h1>
 
+<p>Git makes conflict resolution easy.</p>
 
-<p>除了<code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code>,<code>=======</code>和<code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code>标记外，这个指令使用了<code>|||||||</code>标记，后面跟着的是原始内容。你可以分辨原始内容，你的改动及其它人的改动。有时根据原始内容能更好地解决冲突。</p>
+<blockquote><blockquote><blockquote><blockquote><blockquote><blockquote><blockquote><p>theirs:sample.txt
+And here is another line that is cleanly resolved or unmodified.
+<code>``
+除了</code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;<code>,</code>=======<code>和</code>>>>>>>><code>标记外，这个指令使用了</code>|||||||`标记，后面跟着的是原始内容。你可以分辨原始内容，你的改动及其它人的改动。有时根据原始内容能更好地解决冲突。</p></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote>
 
 <h4>怎么解决冲突</h4>
 
@@ -330,37 +235,23 @@ git merge [-n][--stat][--no-commit][--squash][--[no-]edit] [-s &lt;strategy&gt;]
 <h4>示例</h4>
 
 <ul>
-<li>合并<code>fixes</code>和<code>enhancements</code>到当前分支，来一次多方合并：</li>
-</ul>
-
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='c'><span class='line'><span class="err">$</span> <span class="n">git</span> <span class="n">merge</span> <span class="n">fixes</span> <span class="n">enhancements</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li>合并<code>obsolete</code>到当前分支，使用<code>ours</code>合并策略：</li>
-</ul>
-
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='c'><span class='line'><span class="err">$</span> <span class="n">git</span> <span class="n">merge</span> <span class="o">-</span><span class="n">s</span> <span class="n">ours</span> <span class="n">obsolete</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li>合并<code>maint</code>到当前分支，但不做自动提交：</li>
-</ul>
-
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='c'><span class='line'><span class="err">$</span> <span class="n">git</span> <span class="n">merge</span> <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="n">commit</span> <span class="n">maint</span>
-</span></code></pre></td></tr></table></div></figure>
-
+<li><p>合并<code>fixes</code>和<code>enhancements</code>到当前分支，来一次多方合并：
+<code>
+$ git merge fixes enhancements
+</code></p></li>
+<li><p>合并<code>obsolete</code>到当前分支，使用<code>ours</code>合并策略：
+<code>
+$ git merge -s ours obsolete
+</code></p></li>
+<li><p>合并<code>maint</code>到当前分支，但不做自动提交：
+<code>
+$ git merge --no-commit maint
+</code></p>
 
 <blockquote><p>当你想进一步对合并做改动，或者只是想自己写合并提交日志时，你可以使用这种方法。
-不要滥用这个选项去暗地里做一些重要改动而提交到这次合并中来。小的修补例如修改发布号或版本号是可以接受的。</p></blockquote>
+不要滥用这个选项去暗地里做一些重要改动而提交到这次合并中来。小的修补例如修改发布号或版本号是可以接受的。</p></blockquote></li>
+</ul>
+
 
 <h4>合并策略</h4>
 
@@ -441,136 +332,7 @@ git merge [-n][--stat][--no-commit][--squash][--[no-]edit] [-s &lt;strategy&gt;]
 <p><code>git</code>指令的一部分。</p>
 
 <blockquote><p>Written with <a href="http://benweet.github.io/stackedit/">StackEdit</a>.</p></blockquote>
-</div>
-
-
-  <footer>
-    <p class="meta">
-      
+]]></content>
+  </entry>
   
-
-<span class="byline author vcard">Posted by <span class="fn">Jinwu Zhan</span></span>
-
-      
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-01-17T23:57:26+08:00" pubdate data-updated="true">2014/01/17</time>
-      
-
-<span class="categories">
-  
-    <a class='category' href='/blog/categories/git/'>git</a>
-  
-</span>
-
-
-    </p>
-    
-      <div class="sharing">
-  
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://www.zhanjinwu.cn/blog/2014/01/17/git-merge-shou-ce-ye/" data-via="" data-counturl="http://www.zhanjinwu.cn/blog/2014/01/17/git-merge-shou-ce-ye/" >Tweet</a>
-  
-  
-  
-</div>
-
-    
-    <p class="meta">
-      
-      
-        <a class="basic-alignment right" href="/blog/2014/01/19/bo-ke-gong-ju-octopressyuan-li-fen-xi/" title="Next Post: 博客工具Octopress原理分析">博客工具Octopress原理分析 &raquo;</a>
-      
-    </p>
-  </footer>
-</article>
-
-  <section>
-    <h1>Comments</h1>
-    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</div>
-  </section>
-
-</div>
-
-<aside class="sidebar">
-  
-    <section>
-  <h1>Recent Posts</h1>
-  <ul id="recent_posts">
-    
-      <li class="post">
-        <a href="/blog/2014/01/19/bo-ke-gong-ju-octopressyuan-li-fen-xi/">博客工具Octopress原理分析</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/01/17/git-merge-shou-ce-ye/">Git-merge 手册页</a>
-      </li>
-    
-  </ul>
-</section>
-
-
-
-
-
-  
-</aside>
-
-
-    </div>
-  </div>
-  <footer role="contentinfo"><p>
-  Copyright &copy; 2014 - Jinwu Zhan -
-  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
-</p>
-
-</footer>
-  
-
-<script type="text/javascript">
-      var disqus_shortname = 'codinglife';
-      
-        
-        // var disqus_developer = 1;
-        var disqus_identifier = 'http://www.zhanjinwu.cn/blog/2014/01/17/git-merge-shou-ce-ye/';
-        var disqus_url = 'http://www.zhanjinwu.cn/blog/2014/01/17/git-merge-shou-ce-ye/';
-        var disqus_script = 'embed.js';
-      
-    (function () {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    }());
-</script>
-
-
-
-
-
-
-
-  <script type="text/javascript">
-    (function(){
-      var twitterWidgets = document.createElement('script');
-      twitterWidgets.type = 'text/javascript';
-      twitterWidgets.async = true;
-      twitterWidgets.src = '//platform.twitter.com/widgets.js';
-      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
-    })();
-  </script>
-
-
-
-
-
-</body>
-</html>
+</feed>

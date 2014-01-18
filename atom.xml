@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Coding Life]]></title>
-  <link href="http://zhanjinwu.cn/atom.xml" rel="self"/>
-  <link href="http://zhanjinwu.cn/"/>
-  <updated>2014-01-19T00:14:30+08:00</updated>
-  <id>http://zhanjinwu.cn/</id>
+  <link href="http://www.zhanjinwu.cn/atom.xml" rel="self"/>
+  <link href="http://www.zhanjinwu.cn/"/>
+  <updated>2014-01-19T02:04:20+08:00</updated>
+  <id>http://www.zhanjinwu.cn/</id>
   <author>
     <name><![CDATA[Jinwu Zhan]]></name>
     
@@ -14,10 +14,50 @@
 
   
   <entry>
+    <title type="html"><![CDATA[博客工具Octopress原理分析]]></title>
+    <link href="http://www.zhanjinwu.cn/blog/2014/01/19/bo-ke-gong-ju-octopressyuan-li-fen-xi/"/>
+    <updated>2014-01-19T01:14:51+08:00</updated>
+    <id>http://www.zhanjinwu.cn/blog/2014/01/19/bo-ke-gong-ju-octopressyuan-li-fen-xi</id>
+    <content type="html"><![CDATA[<blockquote><p>因为简单，所以选择了<a href="http://octopress.org/">Octopress</a>作为博客搭建程序，不过好奇心驱使我弄清楚背后的工作原理。<a href="http://www.xiaoche.me/blog/2012/01/18/install-octopress/">新手安装传送门</a></p></blockquote>
+
+<p>Octopress建立在<a href="http://jekyllrb.com/">jekyll</a>之上，使用jekyll的模板文件，生成静态站点。
+关于jekyll，主要功能就是定义了约定的目录格式，使用<a href="http://liquidmarkup.org/">liquid</a>作为模板语言，最终生成静态格式的网站。目前Github Pages就是搭建在jekyll之上。
+另外，octopress还支持了css预处理格式<a href="http://sass-lang.com/">sass</a>，使用<a href="http://compass-style.org/">compass</a>进行自动编译。</p>
+
+<!--more-->
+
+
+<p>octopress和jekyll都是ruby语言的优秀作品，我不太熟悉ruby,但ruby的makefile文件Rakefile比较容易看懂，类似于ant的build.xml。Rakefile预定义了变量，然后定义了“task”供调用，我意识到，通过阅读Rakefile能够快速了解octopress的功能原理。</p>
+
+<p>octopress的Rakefile提供的几个常用任务(执行方法：<code>rake ${taksname}</code> ):</p>
+
+<ul>
+<li>install 安装默认风格或指定风格，这是octopress安装后的初始化操作</li>
+<li>setup_github_pages 设置github的repo</li>
+<li>generate 执行compass和jekyll</li>
+<li>preview 执行compass,jekyll并运行服务器</li>
+<li>deploy 使用push或rsync布署</li>
+<li>gen_deploy ＝ generate + deploy</li>
+</ul>
+
+
+<p>octopress相比jekyll多做了几步：</p>
+
+<ol>
+<li> 支持saas格式的样式文件</li>
+<li> 预定义了漂亮的风格和不错的jekyll插件</li>
+<li> 利用jekyll生成目标静态文件，</li>
+<li> 能够方便地把内容提交到远程服务器(git push or rsync)。</li>
+</ol>
+
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Git-merge 手册页]]></title>
-    <link href="http://zhanjinwu.cn/blog/2014/01/17/git-merge-shou-ce-ye/"/>
+    <link href="http://www.zhanjinwu.cn/blog/2014/01/17/git-merge-shou-ce-ye/"/>
     <updated>2014-01-17T23:57:26+08:00</updated>
-    <id>http://zhanjinwu.cn/blog/2014/01/17/git-merge-shou-ce-ye</id>
+    <id>http://www.zhanjinwu.cn/blog/2014/01/17/git-merge-shou-ce-ye</id>
     <content type="html"><![CDATA[<h4>名字</h4>
 
 <p><code>git-merge</code> &ndash; 合并两个或多个提交历史</p>

@@ -1,19 +1,23 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>http://zhanjinwu.cn/blog/2014/01/17/git-merge-shou-ce-ye/</loc>
-        <lastmod>2014-01-18T00:40:02+08:00</lastmod>
+        <loc>http://www.zhanjinwu.cn/blog/2014/01/17/git-merge-shou-ce-ye/</loc>
+        <lastmod>2014-01-19T01:50:43+08:00</lastmod>
     </url>
     <url>
-        <loc>http://zhanjinwu.cn/robots.txt</loc>
+        <loc>http://www.zhanjinwu.cn/blog/2014/01/19/bo-ke-gong-ju-octopressyuan-li-fen-xi/</loc>
+        <lastmod>2014-01-19T01:49:40+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://www.zhanjinwu.cn/robots.txt</loc>
         <lastmod>2014-01-17T23:41:25+08:00</lastmod>
     </url>
     <url>
-        <loc>http://zhanjinwu.cn/</loc>
-        <lastmod>2014-01-18T00:40:02+08:00</lastmod>
+        <loc>http://www.zhanjinwu.cn/</loc>
+        <lastmod>2014-01-19T01:50:43+08:00</lastmod>
     </url>
     <url>
-        <loc>http://zhanjinwu.cn/blog/archives/</loc>
-        <lastmod>2014-01-18T00:40:02+08:00</lastmod>
+        <loc>http://www.zhanjinwu.cn/blog/archives/</loc>
+        <lastmod>2014-01-19T01:50:43+08:00</lastmod>
     </url>
 </urlset>
